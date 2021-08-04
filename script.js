@@ -1,8 +1,9 @@
-const { Plugin } = require('powercord/entities');
-const { getModule } = require('powercord/webpack');
-const { getMessages } = getModule([ 'getMessages' ], false);
 const { getChannelId } = getModule([ 'getLastSelectedChannelId' ], false);
 const { getCurrentUser } = getModule([ 'getCurrentUser' ], false);
+const { Plugin } = require('powercord/entities');
+const { getMessages } = getModule([ 'getMessages' ], false);
+const { getModule } = require('powercord/webpack');
+
 
 module.exports = class purge extends Plugin {
   startPlugin () {
